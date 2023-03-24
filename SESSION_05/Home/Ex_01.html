@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 01 - </title>
+    <style>
+        #parent
+        {
+            height: 100%;
+            height: 100px;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            background-color: yellow;
+        }
+        #child 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+           font-size: 30px;
+            font-weight: 800;
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation-name: marquee;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes marquee
+        {
+            form
+            {
+                left: 0%;
+            }
+            to
+            {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <p id="child">
+            Tạo Hiệu ứng bằng animations
+        </p>
+    </div>
+</body>
+</html>

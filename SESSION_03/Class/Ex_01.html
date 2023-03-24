@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 01 - Tạo form đơn giản</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            
+        }
+        #f_SoThich
+        {
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            border-style: solid;
+            border-color: rgb(196, 192, 192);
+            background-color: rgb(196, 192, 192);
+        }
+        #f_SoThich table
+        {
+            width: 500px;
+            border-collapse: collapse;
+            border: 12px;
+        }
+        #f_SoThich h3
+        {
+            background-color: gray;
+            padding: 15px;
+            color: rgb(196, 192, 192);
+        }   
+        #f_SoThich td
+        {
+            padding-left: 5px;
+        }
+        #bt
+        {
+            text-align: center;
+        }
+        #f_DangKy
+        {
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: rgb(216, 216, 250);
+            font-size: 20px;
+            font-family:  Tahoma;
+        }
+        #f_DangKy h3
+        {
+            width: 464px;
+            background-color: rgb(67, 103, 221);
+            padding: 15px;           
+        }
+        .tbx_
+        {
+            width: 300px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .slb_
+        {
+            width: 120px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .btn_
+        {
+            font-size: 20px;
+            padding: 5px;
+        }
+        #f_DangKy td
+        {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form  id="f_SoThich">
+            <table>
+                <tr>
+                    <th colspan="4"><h3>SỞ THÍCH CỦA BẠN</h3></th>
+                </tr>
+                <tr>
+                    <td><label>Họ và tên</label></td>
+                    <td colspan="3"><input type="text" name="Ho_Ten" size="35"/></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td colspan="3"><input type="text" name="Email" size="35"/></td>
+                </tr >
+                <tr valign="top">
+                    <td><label>Sở thích</label></td>
+                    <td>
+                        <input type="checkbox" name="So_Thich" /> Thể thao<br/>
+                        <input type="checkbox" name="So_Thich" /> Lướt web<br/>
+                        <input type="checkbox" name="So_Thich" /> Du lich<br/>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="So_Thich" /> Âm nhạc<br/>
+                        <input type="checkbox" name="So_Thich" /> Chơi game<br/>
+                    </td>
+                    <td>
+                    <input type="checkbox" name="So_Thich" /> Đọc sách<br/>
+                    <input type="checkbox" name="So_Thich" /> Điện ảnh<br/>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="4" >
+                        <input type="submit" value="Gửi thông tin"id="btn"/>
+                        <input type="reset" value="Nhập lại"id="btn"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <section>
+        <form id="f_DangKy">
+            <table >
+                <tr>
+                    <th colspan="2"><h3>ĐĂNG KÝ HỌC VIÊN</h3></th>
+                </tr>
+                <tr>
+                    <td><label>Họ và tên:</label></td>
+                    <td><input type ="text" class="tbx_" ></td>
+                </tr>
+                <tr>
+                    <td><label>Ngày sinh:</label></td>
+                    <td><input type="text" class="tbx_" ></td>
+                </tr>
+                <tr>
+                    <td><label>Đia chỉ:</label></td>
+                    <td>
+                        <textarea cols="50" rows="4" class="tbx_"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Giới tính</label></td>
+                    <td>
+                        <input type="radio" name="sex" checked><label> Nam</label>
+                        <input type="radio" name="sex"><label> Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><Label>Chọn lớp</Label></td>
+                    <td>
+                        <select class="slb_">
+                            <option value="Chọn lớp"> Chọn lớp</option>
+                            <option value="Lớp 1"> Lớp 01</option>
+                            <option value="Lớp 2"> Lớp 02</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="text" class="tbx_"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Điện thoại:</label></td>
+                    <td><input type="tel" name="phone"class="tbx_"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Gửi thông tin" class="btn_"/>
+                        <input type="reset" value="Nhập lại" class="btn_"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
+</html>
