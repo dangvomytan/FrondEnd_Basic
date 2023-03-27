@@ -1,0 +1,53 @@
+body
+{
+    width: 1200px ;
+    margin: auto;
+    margin-top: 20px;
+    display:  grid;
+    grid-template-columns:  repeat(5,1fr);
+    grid-template-areas: "header header header header header"
+                        "nav    nav     nav     nav     nav "
+                        "left   center  center  center right"
+                        "floot floot floot floot floot ";
+    column-gap: 20px;
+    row-gap:20px;
+
+
+}
+.item
+{
+    border: 2px solid red;
+    background-color: goldenrod;
+    text-align: center;
+}
+
+.item_1
+{
+    grid-area: header;
+    height: 60px;
+}
+.item_2
+{
+    grid-area: nav;
+    height: 60px;
+}
+.item_3
+{
+    grid-area: left;
+    height: 300px;
+}
+.item_4
+{
+    grid-area: center;
+    height: 300px;
+}
+.item_5
+{
+    grid-area: right;
+    height: 300px;
+}
+.item_6
+{
+    grid-area: floot;
+    height: 60px;
+}

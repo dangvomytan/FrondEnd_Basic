@@ -1,0 +1,57 @@
+img{
+    width: 400px;
+    height: 500px;
+}
+.slider
+{
+    position: relative;
+    width: 410px;
+    height: 510px;
+    background: rgb(9,4,134);
+    background: linear-gradient(101deg, rgba(9,4,134,1) 0%, rgba(69,188,252,1) 100%);
+    margin: auto;
+    padding: 10px;
+
+}
+.pictures
+{
+    width: 400px;
+    height: 500px;   
+    background-color:green;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+.fa-angle-left 
+{
+    color: #c8ced3;
+    font-size: 100px;
+    position: absolute;
+    top: 300px;
+    left: 340px;
+}
+.control
+{
+    width: 400px;
+    height: 500px;   
+    position: absolute;
+    top: 15px;
+    left: 15px;
+      
+}
+.fa-angle-left
+{
+    color: #c8ced3;
+    font-size: 100px;
+    position: absolute;
+    top: 255px;
+    left: 10px;
+}
+.fa-angle-right
+{
+    color: #c8ced3;
+    font-size: 100px;
+    position: absolute;
+    top: 255px;
+    left: 340px;
+}

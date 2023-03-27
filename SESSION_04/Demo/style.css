@@ -1,0 +1,207 @@
+*
+{
+    margin: 0;
+    font-family: tahoma;
+}
+header
+{
+    background-color: chocolate;
+    display:flex; 
+    width: 1000px;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10 20px;
+    justify-content: space-evenly;
+}
+header ul
+{
+    list-style: none;
+    display: flex;
+}
+header .menu_left
+{
+    padding: 20px 10px;
+    width: auto;
+    color: white;
+}
+header .menu_right
+{
+    padding: 20px 10px;
+    width: auto;
+    color: white;
+
+}
+#logo_pannel
+{
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    color: orange;
+    font-family: Tahoma;
+    padding: 20px;
+}
+.logo_
+{
+    padding-top: 10px;
+}
+
+main
+{
+    width: 1000px;
+    margin: auto;
+}
+#left
+{
+    width: 400px;
+    height: 200px;
+    text-align: justify;
+}
+#center
+{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding-top: 25px;
+}
+#qc
+{
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+
+}
+/* CSS định dang bảng giỏ hàng */
+#TableCart
+{
+width: 780px;
+margin-top: 31px;
+}
+#TableCart table
+{
+width: 100%;
+font-size:20px;
+text-align: left;
+border-collapse: collapse;
+}
+#TableCart th
+{
+border-bottom: 2px solid gray;
+}
+#TableCart td
+{
+padding: 5px 10px;
+border-bottom: 2px solid gray;
+}
+#TableCart th:nth-child(1)
+{
+text-align:  left;
+width: 50%;
+padding: 5px 10px;
+}
+#TableCart tr:nth-child(1) th:nth-child(2)
+{
+width: 20%;
+padding: 5px 10px;
+}
+#TableCart tr:nth-child(1) th:nth-child(3)
+{
+width: 10%;
+padding: 5px 10px;
+}
+#TableCart tr:nth-child(n+1) td:nth-child(1)
+{
+width: 8%;
+text-align: center;
+padding: 5px 10px;
+color: red;
+}
+#TableCart tr:nth-child(n+2) td:nth-child(2)
+{
+width: 8%;
+text-align: center;
+padding: 5px 10px;
+}
+#TableCart img
+{
+width: 40px;
+height: 40px;
+}
+.tbx_
+{
+width: 70px;
+font-size: 16px;
+padding: 3px;
+text-align: center;
+
+}
+/* CSS định dạng section : cart totail */
+#CartTotals h2
+{
+font-size: 30px;
+}
+#CartTotals
+{
+width: 218px;
+float: right;
+}
+#CartTotals table
+{
+border-collapse: collapse;
+}
+#CartTotals th:first-child
+{
+width: 90px;
+text-align: left;
+padding: 5px 10px;
+border-bottom: 2px solid gray;
+}
+#CartTotals th:nth-child(2)
+{
+width: 115px;
+box-sizing: border-box;
+text-align: left;
+padding: 5px 10px;
+border-bottom: 2px solid gray;
+}
+#CartTotals td
+{   
+padding: 5px 10px;
+}
+#btn_
+{
+background-color: chocolate;
+border-radius: 5px;
+padding: 10px;
+margin-left: 20px;
+}
+footer
+{
+    width: 1000px;
+    /* background-color: chocolate; */
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+footer h3
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#contact_
+{
+    width: 300px;
+}
+#working_
+{
+    width: 300px;
+}
+#helf_
+{
+    width: 300px;
+}
+#touch_
+{
+    width: 200px;
+}

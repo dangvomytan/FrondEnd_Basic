@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CSS </title>
+    <style>
+        #DoUuTien
+        {
+            background-color: blue;
+        }
+
+        .test_1
+        {
+            background-color: blue;
+        }
+        #DoUuTien li
+        {
+            background-color:  green;
+        }
+        .box_1
+        {
+            width: 300;
+            /* width = content */
+        }
+        .box_2
+        {
+            /* 
+                box-sizing: border-box ==> Tự set kích thước conten theo width.
+                width = (margin + border + padding + conten) 
+                */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!--  Nhùng CSS bằng inline -->
+    <header>
+        <h1> Demo CSS</h1>
+    </header>
+    <main>
+        <section id="DoUuTien">
+            <h3>Độ ưu tiên trong CSS</h3>
+            <ol>
+                <li style="background-color: red;">
+                    inline ưu tiên hơn internal, external
+                </li>
+                <li class="test_1">
+                    internal, exteral thì dựa vào thứ tự nhúng trong HTML.
+                </li>
+                <li>
+                    Bộ chọn có độ ảnh hưởng càng thấp, thì độ ưu tiên càng cao.
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h3>Box modudel</h3>
+            <div>
+
+            </div>
+        </section>
+        <section class="Change_Display">
+            <h3> Thay đổi display</h3>
+            <ul>
+                <li>
+                    Block -  tạo một dòng mới: điều chỉnh đc width, heigth, padding.
+                </li>
+                <li>
+                    Inline - không thể thay đổi width, hieght, margin-left,margin-right.
+                </li>
+                <li>
+                    block-inline - 
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

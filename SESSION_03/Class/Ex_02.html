@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 02 - Tạo form lấy survey khách hàng</title>
+    <style>
+    #Survey
+    {
+        background-color: grey;
+        margin: auto;
+        width:800px;font-size: 18px;
+        font-family: tahoma;
+        padding: 10px;
+    }
+    h3
+    {
+        text-align: center;
+    }
+    .slt_
+    {
+        width: 120px;
+        padding: 3px;
+        margin: 5px;
+        font-size: 18px;
+        font-family: tahoma;
+    }
+    .rdo_
+    {
+        padding: 3PX;
+    }
+    .tbx_
+    {
+        margin-left: 25px;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serifs;
+        margin-top: 3px;
+    }
+    </style>
+
+</head>
+<body>
+    <section id="Survey">
+        <h3>Market Research Survey</h3>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <fomrm>
+            <div>
+                <label>What is your range?</label>
+                <br>
+                <select class="slt_">
+                    <option value="18-24">18 - 24</option>
+                    <option value="25-30">25 - 30</option>
+                </select>
+            </div>
+            <div>
+                <label>What is your yearly income range?</label>
+                <br/>
+                <select class="slt_">
+                    <option value="0-20000">$0 - $25.000</option>
+                </select>
+            </div>
+            <div>
+                <label>Gerder Identity</label>
+                <br/>
+                <input type="radio" name="gender" class="rdo_"/>
+                <label> Male</label>
+                <br/>
+                <input type="radio" name="gender"class="rdo_"/>
+                <label> Female</label>
+                <br/>
+                <input type="radio" name="gender"class="rdo_"/>
+                <label> Nonbinary</label>
+                <br/>
+                <input type="radio" name="gender"class="rdo_"/>
+                <label> Other</label>
+                <br>
+                <input  type="text" name="other" class="tbx_">
+            </div>
+            <div>
+                <label>Which of the following products have your purchased in the last 2 months. Please check all apply.</label>
+                <br/>
+                <input type="checkbox" name="product" />
+                <label>Product 1</label>
+                <br/>
+                <input type="checkbox" name="product" />
+                <label>Product 2</label>
+                <br/>
+                <input type="checkbox" name="product" />
+                <label>Product 3</label>
+            </div>
+            <div>
+                <label>How often would you use our new product?</label>
+                <br/>
+                <input type="radio" name="often"/>
+                <label>Daily</label>
+                <br/>
+                <input type="radio" name="often"/>
+                <label>Weekly</label>
+                <br/>
+                <input type="radio" name="often"/>
+                <label>Monthly</label>
+            </div>
+          <div>
+            <label>What would you pay for the new product?</label>
+            <br/>
+            <label>$</label>
+            <input type="text" >
+            <label>.</label>
+            <input type="text" >
+            <br/>
+            <label>Dollars</label>
+            <label>Cents</label>
+          </div>
+        <div>
+            <label>What features would you like to see in the new product.</label>
+            <br/>
+            <textarea rows="10" cols="100"></textarea>
+        </div>
+        <div>
+            <label>Please rate your level of agreement with the following statements.</label>
+            <br/>
+            <table border="2">
+                <tr>
+                    <td></td>
+                    <td>Strongly Disagree</td>
+                    <td>Disagree</td>
+                    <td>Agree</td>
+                    <td>Strongly Agree</td>
+                </tr>
+                <tr>
+                    <td>Orur products are priced fairly.</td>
+                    <td>
+                        <input type="radio" name="check_1"/>
+                        <br>
+                        <label>1</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_1"/>
+                        <br>
+                        <label>2</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_1"/>
+                        <br>
+                        <label>3</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_1"/>
+                        <br>
+                        <label>4</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Our products are high quality.</td>
+                    <td>
+                        <input type="radio" name="check_2"/>
+                        <br>
+                        <label>1</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_2"/>
+                        <br>
+                        <label>2</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_2"/>
+                        <br>
+                        <label>3</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_2"/>
+                        <br>
+                        <label>4</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>You would recommend our product to a frend or cowoeker.</td>
+                    <td>
+                        <input type="radio" name="check_3"/>
+                        <br>
+                        <label>1</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_3"/>
+                        <br>
+                        <label>2</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_3"/>
+                        <br>
+                        <label>3</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="check_3"/>
+                        <br>
+                        <label>4</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        </fomrm>
+    </section>
+</body>
+</html>
