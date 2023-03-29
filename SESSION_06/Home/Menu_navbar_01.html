@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: tahoma;
+        }
+        header
+        {
+            width:100%;
+            height:  200px;
+            /* background-color: goldenrod; */
+        }
+        /* Style thanh menu điều hướng ngang */
+        #menu_bar  > ul
+        {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden; /*  Ẩn nội dung vượt qua phần tử cha và chỉ hiển thị phần tử cha */
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        #menu_bar  ul > li
+        {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        #menu_bar li a
+        {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none; /* Xoá mọi trang tri của chữ */
+        }
+        /* #menu_bar li:last-child
+        {
+            float: right;
+        } */
+        /* == Liên kết nav đang hoạt động */
+        /* #menu_bar li a:hover:not(.action_nav)
+        {
+            background-color: #bbb;
+        }
+        .action_nav
+        {
+            background-color: goldenrod;
+        } */
+        /* --------------------------------- */
+        #menu_bar  ul ul li{
+            list-style: none    ;
+            background-color: green;
+            clear: both;
+            position: absolute;
+            visibility: hidden;
+        }
+        #menu_bar  li:hover {
+            background-color: aqua;
+        }
+</head>
+    <header>
+    </header>
+    <nav id="menu_bar">
+        <ul>
+            <li><a   href="">Trang chu</a></li>
+            <li><a href="">Trang mot</a></li>
+            <li><a href="">Trang hai</a></li>
+            <li><a href="">Trang ba</a></li>
+            <li><a href="">Trang tu</a></li>
+            <li>
+                <a href="">Trang nam</a>
+                <ul>
+                    <li><a href="">Phan tu con 1</a></li>
+                    <li><a href="">Phan tu con 1</a></li>
+                    <li><a href="">Phan tu con 1</a></li>
+                    <li><a href="">Phan tu con 1</a></li>
+                    <li><a href="">Phan tu con 1</a></li>
+                </ul>    
+            </li>      
+            <li><a href="">Search</a></li>      
+        </ul>
+    </nav>
+
+<body>
+    
+</body>
+</html>
