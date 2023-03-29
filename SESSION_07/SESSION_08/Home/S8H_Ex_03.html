@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S8Home_Ex03 Thực hành 3</title>
+</head>
+<body>
+        <h2>1. console.log()</h2>
+        <p>Dùng để in ra giá trị được chuyển tới bảng điều kiển</p>
+        <script>
+            console.log('Giá trị gửi đi');
+        </script>
+
+
+        <h2>2. console.error</h2>
+        <p>Dùng để in ra  thông báo lỗi, có màu đỏ, có thể tạo ra thông báo lỗi, hoặc phát sinh trong quá trình thực thi</p>
+        <script>
+            console.error('Lỗi rồi đó nha bạn');
+        </script>
+
+
+        <h2>3. console.warn</h2>
+        <p>Dùng để in ra cảnh báo, có màu vàng</p>
+        <script>
+            console.warn('Coi chừng lỗi font chữ kìa bạn');
+        </script>
+
+
+        <h2>4. console.clear</h2>
+        <p>Dùng để xóa bỏ các thông báo lỗi, cảnh báo, các kết quả</p>
+        <!-- <script>
+            console.clear();
+        </script> -->
+
+
+        <h2>5. console.time() và console.timeEnd()</h2>
+        <p>Hàm dùn để xem thơi gian của một khối hoặc một làm</p>
+        <script>
+            console.time('timer');
+            const hello = function(){
+                console.log('Hello console.');
+            }
+            hello();
+            console.timeEnd('timer');
+        </script>    
+
+
+        <h2>6. console.table()</h2>
+        <p>Hiện thông báo dưới dạng bảng</p>
+        <script>
+            console.table({a:1,b:2,c:3});
+        </script>
+    
+    
+        <h2>7. console.count()</h2>
+        <p>Hàm dùng đếm số lần mà một biến được gọi đến</p>
+        <script>
+            for(let i=0; i < 3; i++){
+                console.count(i);
+            }
+        </script>
+        <script>
+            function sayHello(name) {
+                console.count()
+                console.log(name)
+                }
+                sayHello("Tân")
+                sayHello("Đặng")
+                sayHello("Võ")
+                sayHello("Tân")
+        </script>
+
+
+        <h2>8. console.group(); và console.groupEnd();</h2>
+        <p>Nhóm các đoạn message hiển thị được in ra ở trong console</p>
+        <script>
+            console.group('group1');
+            console.error('Error');
+            console.warn('Warning');
+            console.log('I belong to a group');
+            console.groupEnd();
+            console.log('I dont belong to any group');
+        </script>
+</body>
+</html> 
