@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S8Home_Ex01 Thực hành 1</title>
+</head>
+<body>
+    <h2>BT 1: Sử dụng hàm alert</h2>
+    <button type = "button" onclick="ShowMessage_Ex1();">Click me !</button>
+    <script>
+        function ShowMessage_Ex1(){
+            alert('Xin chào !');
+        }
+    </script>
+    <h2>BT 2: Hiển thị kết quả sử dụng thẻ HTML</h2>
+    <div id="MessageDiv"></div>
+    <button type="button" onclick="ShowMessage_Ex2();">Click me !</button>
+    <script>
+        function ShowMessage_Ex2(){
+            document.getElementById('MessageDiv').innerHTML='Xin chào !';
+        }
+    </script>
+    <h2>BT 3: Hiển thị kết quả sử dụng hàm document.write()</h2>
+    <button type="button" onclick="ShowMessage_Ex3();">Click me!</button>
+    <script>
+        function ShowMessage_Ex3(){
+            document.write('Xin chào !!!');
+        }
+    </script>
+        <h2>BT 4: Hiển thị kết quả sử dụng hàm console.log()</h2>
+        <button type="button" onclick="ShowMessage_Ex4();">Click me!</button>
+        <script>
+            function ShowMessage_Ex4(){
+                console.log('Xin chào !');
+            }
+        </script>
+</body>
+</html>
