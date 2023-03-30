@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="S9C_Dm_02.css">
+    <link rel="stylesheet" href="S9C_Ex_04.css">
 </head>
 <body>
     <section class="Inqquiries">
@@ -44,13 +44,13 @@
                     City
                 </td>
                 <td >
-                    <input type="text"><br>
+                    <input type="text" id="state"><br>
                     State/Region/Province
                 </td>
             </tr>
             <tr>
                 <td >
-                    <input type="text"><br>
+                    <input type="text" id="postal"><br>
                     Postal/Zip Code
                 </td>
                 <td >
@@ -64,16 +64,16 @@
                 <td colspan="2">
                     What's the progress status
                     <br>
-                    <progress value="100"></progress>
+                    <input type="range" name="" id="progress">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     Do you need any more materials ?
                     <br>
-                    <input type="radio"> Yes
+                    <input type="radio" name="materials" id="materialsYes"> Yes
                     <br>
-                    <input type="radio"> No
+                    <input type="radio" name="materials" id="materialsNo"> No
                 </td>
             </tr>
             <tr>
@@ -102,6 +102,6 @@
             </tr>
         </table>
     </section>
-<script src="../Class/S9C_Dm_02.js"></script>
+<script src="S9C_Ex_04.js"></script>
 </body>
 </html>

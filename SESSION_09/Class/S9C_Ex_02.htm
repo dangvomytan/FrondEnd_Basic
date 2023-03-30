@@ -5,39 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SS 9 Ex 2</title>
-    <style>
-        #Convert_currency
-        {
-            width: 1000px;
-            border: 2px solid red;
-            margin: auto;
-            padding: 50px;
-            font-size: 20px;
-            font-family: Tahoma;
-        }
-        .css_amount
-        {
-            width: 250px;
-            font-size: 20px;
-            padding: 5px;
-        }
-        #Convert_currency select
-        {
-            width: 100px;
-            font-size: 20px;
-            padding: 5px;
-        }
-        #Convert_currency select
-        {
-            width: 100px;
-            font-size: 20px;
-            padding: 5px;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="S9C_Ex_02.css">
 <body>
     <Section id="Convert_currency">
-        <table border="1">
+        <table>
             <tr>
                 <th>Amount</th>
                 <th>Frome currency</th>
@@ -49,24 +20,21 @@
                     <input class="amount" id="amount" type="number" placeholder="nhập số tiền">
                 </td>
                 <td>
-                    <select id="currency">
+                    <select id="fromeCurrency" class="currency" onchange="curencyChange()">
                         <option>select</option>
                         <option id="vnd" value="VND">VNĐ</option>
                         <option id="usd" value="USD">USD</option>
                     </select>
                 </td>
                 <td>
-
+                    <input type="text" class="currency" id="toCurrency" disabled>
                 </td>
                 <td>
                     <button onclick="convert()">Convert</button>
                 </td>
             </tr>
             <tr>
-                <td>Kết quả</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="3"><p id="convertAmount"></p></td>
             </tr>
         </table>
     </Section>

@@ -1,0 +1,20 @@
+#Convert_currency
+{
+    border: 2px solid red;
+    margin: auto;
+    padding: 50px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+.amount
+{
+    width: 250px;
+    font-size: 20px;
+    padding: 5px;
+}
+.currency
+{
+    width: 100px;
+    font-size: 20px;
+    padding: 5px;
+}
