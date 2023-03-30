@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS 9 Ex 2</title>
+    <style>
+        #Convert_currency
+        {
+            width: 1000px;
+            border: 2px solid red;
+            margin: auto;
+            padding: 50px;
+            font-size: 20px;
+            font-family: Tahoma;
+        }
+        .css_amount
+        {
+            width: 250px;
+            font-size: 20px;
+            padding: 5px;
+        }
+        #Convert_currency select
+        {
+            width: 100px;
+            font-size: 20px;
+            padding: 5px;
+        }
+        #Convert_currency select
+        {
+            width: 100px;
+            font-size: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <Section id="Convert_currency">
+        <table border="1">
+            <tr>
+                <th>Amount</th>
+                <th>Frome currency</th>
+                <th>To currency</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="amount" id="amount" type="number" placeholder="nhập số tiền">
+                </td>
+                <td>
+                    <select id="currency">
+                        <option>select</option>
+                        <option id="vnd" value="VND">VNĐ</option>
+                        <option id="usd" value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <button onclick="convert()">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </Section>
+    <script src="../Class/S9C_Ex_02.js"></script>
+</body>
+</html>
