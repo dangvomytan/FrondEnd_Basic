@@ -9,8 +9,12 @@ function clickSubmit()
     const postal = document.getElementById("postal").value;
     const country = document.getElementById("coutry");
     const progree = document.getElementById("progress");
+    const materialYes= document.getElementById("materialsYes");
     
-        console.log("Country: ", document.getElementById("materialsYes").value);
+
+
+    const redColor = "color:red";
+    const greenColor = "color:green";
 
    
    
@@ -23,9 +27,12 @@ function clickSubmit()
     console.log("State/Region/Province: ",state);
     console.log("Postal/Zip Code: ",postal);
     console.log("Progress: ", progress.value);
-    // console.log("Materials: ", materials);
-    console.log("Country: ", country);
-    console.log("Country: ", country);
+    if(materialYes.checked == false)
+        console.log("%cMaterials: ",redColor, "No");  
+    else
+        console.log("%c Materials: ",redColor, materialYes.value); 
+
+    
     
     console.groupEnd("on-site")
 }
