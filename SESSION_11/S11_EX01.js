@@ -65,8 +65,40 @@ function Ex04()
         }
     }
 }
-
 function Ex05()
+{
+    const dkt = Number(prompt("Nhâp điểm bài kiểm tra"));
+    const dgk = Number(prompt("Nhập điểm thi giữa kỳ"));
+    const dck = Number(prompt("Nhập điểm thi cuối  kỳ"));
+    const dtb = (dkt+dgk+dck)/3;
+    if(dtb>=9)
+    {
+        alert("Điểm trung bình của bạn là: "+dtb+". Xếp hạng A");  
+    }
+    else
+    {
+        if(dtb>=7)
+        {
+            alert("Điểm trung bình của bạn là: "+dtb+". Xếp hạng B");  
+        }
+        else
+        {
+            if(dtb>=5)
+            {
+                alert("Điểm trung bình của bạn là: "+dtb+". Xếp hạng C");  
+            }
+            else
+            {
+                alert("Điểm trung bình của bạn là: "+dtb+". Xếp hạng D");           
+            }
+        }
+    }
+}
+
+
+
+
+function Ex06()
 {
     const doanhSo = Number(prompt("Nhâp tổng doanh số:"));
     const bacMot = doanhSo*5/100;
@@ -98,7 +130,7 @@ function Ex05()
     +hoaHong); 
 }
 
-function Ex06()
+function Ex07()
 {
     const soPhut = Number(prompt("Số phút gọi trong tháng"));
 
@@ -113,6 +145,7 @@ function Ex06()
     let tongTien = 0;
     if(soPhut>200)
     {
+        const a=prompt("jsfgoijsd g")
         const tongTien = phiCuocCD + (soPhut*phi200) - phiCuoc200 - phiCuoc150 - phiCuoc50;
     }
     else

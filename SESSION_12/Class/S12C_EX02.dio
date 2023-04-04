@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e">
+    <diagram id="00zlZsLBX6IaV69cAZv3" name="Page-1">
+        <mxGraphModel dx="832" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="10" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="INPUT N" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="N&amp;gt;=2" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="210" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="isPrime = TRUE&lt;br&gt;i=2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="320" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="IF N%i==0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="385" y="420" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="i=i+1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="430" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="isPrime = FALSE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="385" y="670" width="80" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
