@@ -35,7 +35,7 @@
         <!-- ------------------------------- -->
         </div>
         <div>
-            <label id="lbl_EX5">...</label>
+            <label id="lbl_EX5"></label>
         </div>
     </div>
 </div>
@@ -54,7 +54,7 @@
                     <!-- ------------------------------- -->
                     </div>
                     <div>
-                        <label id="lbl_EX4">...</label>
+                        <label id="lbl_EX4"></label>
                     </div>
                 </div>
             </div>
@@ -62,26 +62,54 @@
         <!-- ==================================== -->
 </section>
 
-
-
-    <section>
-        <button onclick="EX_21()">Bài tập 1</button>
-        <button onclick="EX_22()">Bài tập 2 </button>
-        <button onclick="EX_231()">Bài tập 3</button>
-        <button onclick="EX_232()">Bài tập 3</button>
-
-
-        <!-- ==================================== -->
-        <section>
-            <!-- ==================================== -->
-            <div class="div_Ex">
-                <div class="div_tilte">
-                    <label>Vẽ hình bằng kí tự</label>
-                </div>
-                <div class="div_content">
-                    <div class="div_element">
+    <!-- Bài luyen tap so 2 -->
+    <section>        
+    <!-- ==================================== -->
+    <!-- in dãy fibonacci -->
+        <div class="div_Ex">
+            <div class="div_tilte"> 
+                <label>In dãy fibonacci</label>
+            </div>
+            <div class="div_content">
+                <div class="div_element">
                     <!-- ------------------------------- -->
-                    <div>
+                    <input  type="number" id="tbx_EX21" placeholder="Nhập số lượng!">
+                    <button onclick="EX_21()">Run</button>
+                    <!-- ------------------------------- -->
+                </div>
+                <div>
+                    <label id="lbl_EX21"></label>
+                </div>
+            </div>
+        </div>
+    <!-- ==================================== -->
+    <!-- Tính giai thừa -->
+        <div class="div_Ex">
+            <div class="div_tilte">
+                <label>Tính giai thừa</label>
+            </div>
+            <div class="div_content">
+                <div class="div_element">
+                    <!-- ------------------------------- -->
+                    <input  type="number" id="tbx_EX22" placeholder="Nhập số nguyên!">
+                    <button onclick="EX_22()">Run</button>
+                    <!-- ------------------------------- -->
+                </div>
+                <div>
+                    <label id="lbl_EX22"></label>
+                </div>
+            </div>
+        </div>
+    <!-- ==================================== -->
+    <!-- Vẽ hình bằng kí tự -->
+        <div class="div_Ex">
+            <div class="div_tilte">
+                <label>Vẽ hình bằng kí tự</label>
+            </div>
+             <div class="div_content">
+                <div class="div_element">
+                    <!-- ------------------------------- -->
+                     <div>
                         <input  type="number" id="tbx_EX23" placeholder="Nhập chiều cao!">
                         <button onclick="EX_231()">Botton-right</button>
                         <button onclick="EX_232()">top-right</button>
@@ -94,32 +122,31 @@
                         <label id="lbl_EX23"></label>
                     </div>
                     <!-- ------------------------------- -->
-                    </div>
                 </div>
             </div>
-        </section>
-        <!-- ==================================== -->     
-        <section>
-            <div class="div_Ex">
-                <div class="div_tilte">
-                    <label>Tính lãi ngân hàng</label>
-                </div>
-                <div class="div_content">
-                    <div class="div_element">
-                    <!-- ------------------------------- -->
+        </div>
+    <!-- ==================================== -->
+    <!-- tính lãi xuất ngân hàng --> 
+        <div class="div_Ex">
+             <div class="div_tilte">
+                <label>Tính lãi ngân hàng</label>
+            </div>
+            <div class="div_content">
+                <div class="div_element">
+                <!-- ------------------------------- -->
                     <input  type="number" id="tbx_EX261" placeholder="Số tiền ban đầu">
                     <input  type="number" id="tbx_EX262" placeholder="Số tháng vay">
                     <input  type="number" id="tbx_EX263" placeholder="Lãi suất tháng">
                     <button onclick="EX_26()">Tính lãi suất</button>
                     <!-- ------------------------------- -->
-                    </div>
-                    <div>
-                        <label id="lbl_EX26">...</label>
-                    </div>
+                </div>
+                <div>
+                    <label id="lbl_EX26"></label>
                 </div>
             </div>
-        </section>
-        <!-- ==================================== -->          
+        </div>
+    </section>
+    <!-- ==================================== -->          
     <script src="S13_EX01.js"></script>
     <script src="S13_EX02.js"></script>
 </body>

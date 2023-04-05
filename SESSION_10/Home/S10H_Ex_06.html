@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #girl_img
+        {
+            width: 150px;
+            height: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+        <img id="girl_img" src="app-ve-chibi-14_1626754079.png" alt="">
+        <button onclick="moveRight()">click me</button>
+
+
+        <script>
+            let img_obj =null;
+            let count = 0
+            img_obj = document.getElementById("girl_img");
+            img_obj.style.position = 'relative';
+               
+            console.log(img_obj);
+            
+            function moveRight()
+            {
+                // img_obj.style.left='100px';
+                count+=100
+                img_obj.style.left = count+ 'px';
+
+            }
+            // window.onload =init();
+        </script>
+
+
+  
+</body>
+</html>

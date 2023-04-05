@@ -1,7 +1,8 @@
 // In dãy số fibonacci
 function EX_21()
 {
-    let n=Number(prompt("Nhập n"));
+    const n=Number(document.querySelector("#tbx_EX21").value);
+    let printString = document.querySelector("#lbl_EX21");
     let a=0, b=1,fibo=0;
     let string ="";
     for(i=1;i<n;i++)
@@ -11,19 +12,22 @@ function EX_21()
         a=fibo;
         string = string + fibo + ",";
     }
-    alert("Dãy số fibonacci: "+string)
+    const str = "Dãy số fibonacci: "+string;
+    printString.innerHTML = str;
 }
 // Tính giai thừa của một số nguyên dương
 function EX_22()
 {
-    let n=Number(prompt("Nhập số nguyên dương n"))
+    const n=Number(document.querySelector("#tbx_EX22").value);
+    let printString = document.querySelector("#lbl_EX22");
     let factorial=1;
     for(i=1;i<=n;i++)
     {
         factorial= factorial*i;
         console.log("fac:"+factorial);
     }
-    alert("Số giai thừa của "+n+" là: "+factorial);
+    let str= "Số giai thừa của "+n+" là: "+factorial;
+    printString.innerHTML = str;
 }
 // In hình tam giac
 function EX_231()
@@ -143,9 +147,9 @@ function EX_24()
                     string += space;
                 }
             }
-                string += "<br>";
-          }
-          printString.innerHTML = string;
+            string += "<br>";
+        }
+        printString.innerHTML = string;
     }
 }
 function EX_25()
@@ -178,14 +182,14 @@ function EX_26()
     const month =isNaN(document.querySelector("#tbx_EX262").value);
     const interest =isNaN(document.querySelector("#tbx_EX263").value);
     let printString = document.querySelector("#lbl_EX26");
-    let interestRate=0;
+    let interestRate;
     if(debt!="")
     {
         if(month!="")
         {
             if(interest!="")
             {
-                interestRate = debt*(Math.pow(1+interest)*month-1);
+                interestRate = debt*(Math.power(1+interest, month)-1);
             }
         }
     }

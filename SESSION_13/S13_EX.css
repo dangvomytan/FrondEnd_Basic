@@ -16,13 +16,13 @@
     top: 6px;
     left: 30px;
     padding: 0 10px;
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 10px;
 
 }
 .div_content
 {
-    border: 2px solid red; 
+    border: 2px solid blue; 
     padding: 10px;
     padding-top: 20px;
 }
