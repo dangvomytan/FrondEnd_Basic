@@ -1,7 +1,7 @@
 //--- bài tâp 1 ----------
 let x=0;
-let array01 = Array();
-let array02 = [-3,5,1,3,2,10];
+const array01 = Array();
+const array02 = [-3,5,1,3,2,10];
 function Add_Element()
 {
     let element =  document.querySelector("#tbx_EX01");
@@ -95,6 +95,5 @@ function CaroGame()
         }
     }
     data += "<br/><br/><input type='button' value='Change Value'onclick='changeValue()'>"
-    b.innerHTML=data;
-    
+    b.innerHTML=data;s
 }
