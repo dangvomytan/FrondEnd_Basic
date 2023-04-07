@@ -43,11 +43,11 @@ function EX14C_EX011()
 
 
 // Bài tập 3
-function EX14C_EX013(elemet)
+function EX14C_EX013(element)
 {
     const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const PrintString13 = document.querySelector("#lbl_EX14C_EX013");
-    let valueInput = elemet.value; 
+    let valueInput = element.value; 
     coverStr="";
     for(const str of valueInput)
     { 
@@ -64,12 +64,12 @@ function EX14C_EX013(elemet)
     PrintString13.innerHTML= coverStr;
 }
 // Bài tập 4
-function EX14C_EX02(elemet)
+function EX14C_EX02(element)
 {
     const en = ["cat", "dog","birt","hello","goodbye"];
     const vn = ["mèo", "chó", "chim","xin chào","tạm biệt"];
     const PrintString2 = document.querySelector("#lbl_EX14C_EX02");
-    let valueInput = elemet.value; 
+    let valueInput = element.value; 
     let str="";
     for(i=0;i<en.length;i++)
     {
@@ -86,10 +86,31 @@ function EX14C_EX02(elemet)
     PrintString2.innerHTML= str;
 }
 // Bài tập 4
-function EX14C_EX03(elemet)
+function EX14C_EX03(element)
 {
-    let valueInput = elemet.value; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let valueInput = element.value; 
     const PrintString3 = document.querySelector("#lbl_EX14C_EX03");
+
 
 
     PrintString3.innerHTML= valueInput;
