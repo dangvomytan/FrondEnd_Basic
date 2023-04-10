@@ -66,10 +66,12 @@ function CheckPrime(number)
 function Ex3()
 {
     let n =Number(prompt("Nhập số nguyên"))
+    let p="";
     CheckPrime(n)
     if(CheckPrime(n))
     {
-        alert(+n+" Là số nguyên tố.");
+        // alert(+n+" Là số nguyên tố.");
+        p+=n;
     }
     else
     {
