@@ -1,0 +1,164 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: tahoma;
+
+}
+#User
+{
+    width: 1090px;
+    height: 100%;
+    /* border: 2px solid blue; */
+    margin: auto;
+    background-color: #e0dddd;
+    margin-top: 20px;
+}
+#User_title
+{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(68, 72, 72);
+    justify-content: space-between;
+}
+#User_title h3
+{
+    color: white;
+    padding-left: 15px;
+    position: relative;
+}
+#User_title input
+{
+    border-radius: 20px;
+    position: absolute;
+    top:30px;
+    left: 810px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+#User_title button
+{
+    width: 50px;
+    height: 28 px;
+    border: none;
+    background-color: rgb(68, 72, 72) ;
+
+}
+.fa-user-plus 
+{
+ color: rgb(255, 255, 255);
+}
+.fa-user-plus:hover
+{
+ color: gold;
+}
+
+
+#User_table
+{
+ padding: 5px;
+
+}
+#tblUser
+{
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 2px solid rgb(22, 7, 7); */
+}
+#tblUser img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+#tblUser th
+{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+#tblUser td
+{
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+#tblUser td:first-child
+{
+    text-align: center;
+    width: 5%;
+}
+#tblUser td:nth-child(2)
+{
+    text-align: center;
+    width: 10%;
+}
+#tblUser td:nth-child(3)
+{
+    text-align: left;
+    width: 15%;
+    padding-left: 15px;
+}
+#tblUser td:nth-child(4)
+{
+    text-align: left;
+    width: 15%;
+    padding-left: 15px;
+}
+#tblUser td:last-child
+{
+    text-align: center;
+    width: 16%;
+    padding-left: 15px;
+}
+#tblUser button
+{
+
+    padding: 10px;
+    border: none;
+    background-color: gainsboro;
+}
+.fa-user-pen
+{
+    color: blue;
+}
+.fa-user-xmark
+{
+    color: red;
+}
+.fa-user-pen:hover
+{
+    color: green;
+}
+.fa-user-xmark:hover
+{
+    color: green;
+}
+/* =============================== */
+#addUser
+{
+
+}
+#form
+{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+.div_input
+{
+    background-color: greenyellow;
+    padding: 5px;
+    padding-left: 20px;
+}
+.div_input:last-child
+{
+    background-color: greenyellow;
+    padding: 5px;
+text-align: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .game{
+            width: 1000px;
+            border: 1px solid green;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        .charater
+        {
+            width: 200px;
+            position: absolute;
+        }
+        img
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <button onclick="handleJump()">Jump</button>
+        <div class="charater">
+            <img src="../SESSION_19/1.png" alt="">
+        </div>
+    </div>
+
+
+
+    <script>
+        class Charater{
+            constructor(name,x,y)
+            {
+                this.name = name;
+                this.x=x;
+                this.y=y;
+            }
+            getJump()
+            {
+                this.y -=100;
+                if(this.y <-500)
+                {this.y=500;}
+            }
+            getx()
+            {
+                return this.x;
+            }
+            gety()
+            {
+                return this.y;
+            }
+        }
+        const fuji = new Charater("fuji", 300,300)
+        function  renderCharacter()
+        {
+            const element = document.querySelector(".charater");
+            element.style.top = fuji.gety()+"px";
+        }   
+             renderCharacter();
+
+      function handleJump()
+        {         
+            fuji.getJump();
+            renderCharacter();
+            console.log(fuji);
+        }
+    </script>
+</body>
+</html>

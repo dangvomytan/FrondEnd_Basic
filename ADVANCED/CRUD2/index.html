@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="ad">
+        <!-- ==== Panner ==== -->
+        <div id="banner">
+            <div>
+                <img src="image/banner.jpg" alt="">
+            </div>
+            <div id="bannerTitle">
+                <h1>Ghi cái gì đó vào đây</h1>
+            </div>
+        </div>
+        <!-- ==== Sản phẩm nổi bật ==== -->
+        <div id="ProductHot">
+            <div class="cardProductHot">
+                <div class="cardHot_img">
+                    <img src="image/drink (1).jpg" alt="">
+                </div>
+            </div>
+                        <div class="cardProductHot">
+                <div class="cardHot_img">
+                    <img src="image/drink (2).jpg" alt="">
+                </div>
+            </div> 
+                       <div class="cardProductHot">
+                <div class="cardHot_img">
+                    <img src="image/drink (3).jpg" alt="">
+                </div>
+            </div>            <div class="cardProductHot">
+                <div class="cardHot_img">
+                    <img src="image/drink (4).jpg" alt="">
+                </div>
+            </div>
+            <div class="cardProductHot">
+                <div class="cardHot_img">
+                    <img src="image/drink (5).jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- ======= add product ======= -->
+        <div id="addProduct">
+            <div class="div_title">
+                <h3>Thêm sản phẫm</h3>
+            </div>
+            <div>
+                <table border="2px">
+                    <tr>
+                        <td>ID sản phẫm</td>
+                        <td>
+                            <input type="text" name="" id="tbx_id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hình ảnh</td>
+                        <td>
+                            <input type="file" name="" id="fle_image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tên sản phẩm</td>
+                        <td>
+                            <input type="text" name="" id="tbx_productName">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Giá</td>
+                        <td>
+                            <input type="text" name="" id="tbx_price">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="addProduct()">ADD</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- ==== Sản phẩm ==== -->
+        <div id="cart">
+            <div class=".div_title"><h2>Sản phẩm</h2></div>
+            <div>
+                <table id="tbl_Product">
+                    <tr>
+                        <td>No</td>
+                        <td>Ảnh</td>
+                        <td>Tên sản phẫm</td>
+                        <td>Giá</td>
+                        <td>Action</td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="../CRUD2/image/drink (10).jpg" alt=""></td>
+                        <td>Soda chanh</td>
+                        <td>25.000</td>
+                        <td>
+                            <button>Edit</button>
+                            <BUtton>Delete</BUtton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="scrip.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+body
+{
+    width: 1320px;
+    margin: auto;
+    /* border: 1px solid gray; */
+}
+#topBar
+{
+
+    /* border: 2px solid red; */
+    height: 70px;
+    display: flex;
+}
+#topLogo
+{
+    width: 20%;
+    height: 70px;
+    /* border: 2px solid green; */
+}
+#topLogo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#topSearch
+{
+    width: 30%;
+    height: 70px;
+    /* border: 2px solid rgb(66, 0, 128);    */
+    padding: 15px;
+    padding-top: 17px;
+    position: relative;
+}
+#searchBox
+{
+    width:100%;
+    height: 30px;
+    /* background-color: aquamarine; */
+    padding: 0px 5px;
+
+}
+#searchBox input
+{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 0 10px;
+
+}
+/* === top navbar === */
+#topNav
+{
+    width: 50%;
+    height: 70px;
+    /* border: 2px solid rgb(119, 128, 0);    */
+    padding:23px 0;
+
+}
+#topNav  ul
+{
+    list-style: none;
+
+}
+#topNav  li
+{
+    list-style: none;
+    padding: 15px;
+    display: inline;
+    margin-left: 5px;
+}
+#topNav  a
+{
+    /* background-color: aqua; */
+    text-decoration: none;
+}
+#banner
+{
+
+}
+#banner img
+{
+    width: 100%;
+    height: 100%;
+}
+/* ============================================= */
+.ProductListTitle
+{
+    background-color: #006CFA;
+    padding: 20px 10px;
+    margin-bottom: 5px;
+}
+.listProduct
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+
+}
+.cardProduct
+{
+    box-shadow: 1px 2px 2px 3px #ccc;
+}
+.cardProduct:hover
+{
+    box-shadow: 1px 2px 2px 3px #474545;
+}
+.cardImage
+{
+/* background-color: green; */
+width: 100%;
+}
+.cardImage img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cardContent
+{
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+.cardContent p
+{
+    font-size: 20px;
+}
+.cardContent .productName
+{
+    color: blue;
+}
+.cardContent .productPrice
+{
+    color: red;
+}
+
+
+
+
+
+footer
+{
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+}
+/* =================================================================================== */
+#main
+{
+    width: 100%;
+    /* height: 500px; */
+    /* background-color: gold; */
+    display: flex;
+
+}
+#main-left
+{
+    width: 20%;
+    height: 500px;
+    background-color: rgb(59, 17, 214);
+}
+#main-right
+{
+    width: 80%;
+    /* height: 500px; */
+    background-color: #f4f6f8;
+}
+#mr-header
+{
+    height:70px;
+    /* border: 1px solid gray; */
+    padding:  20px 20px;
+}
+#mr-main
+{
+    /* height:400px; */
+    /* border: 1px solid gray; */
+    padding-left: 20px;
+}
+.main-list
+{
+    /* height:390px; */
+    width: 98.5%;
+    background-color: #FFFFFF;
+}
+.mr-action
+{
+    height:40px;
+    padding-top: 10px;
+    border-bottom: 1px solid #E6E9E8;
+}
+.mr-action span
+{
+    border-bottom: 3px solid #2686D0;
+    padding: 8px 0;
+    margin-left: 10px;
+}
+.mr-search
+{
+    height: 30px;
+    width: 96%;
+    background-color: #ccc;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+}
+.mr-search span
+{
+    font-size: 18px;
+}
+.mr-filter
+{
+    background-color: #eaedf0;
+    width: 16%;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.mr-search input
+{
+    font-size: 18px;
+    width: 84%;
+    height: 30px;
+    padding-left: 25px;
+    background-color: #eaedf0;
+    border: 2px solid #ccc;
+}
+.fa-magnifying-glass
+{
+    position: absolute;
+    top: 7px;
+    left: 165px;
+}
+.mr-render
+{
+    /* height: 300px; */
+    /* background-color: #ccc; */
+    padding: 20px;
+    position: relative;
+}
+#mr-tableRender
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+#mr-tableRender th
+{
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #E6E9E8;
+}
+#mr-tableRender td
+{
+text-align: left;
+padding-left: 10px;
+font-size: 18px;
+border-bottom: 1px solid #E6E9E8;
+}
+#mr-tableRender tr:first-child
+{
+    box-shadow: 1px 2px 2px 1px #E6E9E8;
+}
+#mr-tableRender tr:hover
+{
+    box-shadow: 1px 2px 2px 3px #E6E9E8;
+}
+#mr-tableRender td:first-child
+{
+    width: 5%;
+    text-align: center;
+}
+#mr-tableRender td:nth-child(2)
+{
+    width: 15%;
+    text-align: center;
+    
+}
+#mr-tableRender td:nth-child(4)
+{
+    width: 15%;
+    
+}
+#mr-tableRender td:last-child
+{
+    width: 20%;
+    text-align: center;
+}
+
+#mr-tableRender img
+{
+    width: 80px;
+    height: 90px;
+
+}
+#mr-tableRender button
+{
+    font-size: 20px;
+    width: 70px;
+    height: 30px; 
+    border: none;
+}
+#mr-tableRender button:hover
+{
+    background-color: #006CFA;
+    color: #FFFFFF;
+}
+#mr-tableRender button:last-child:hover
+{
+    background-color: #fa0000;
+    color: #FFFFFF;
+}
+/* ====edit form==== */
+#mr-editform
+{
+    /* display: none; */
+    height: 500px;
+    width: 96%;
+    margin-left : 20px;
+    /* background-color: #F4F6F8; */
+background-color: #F9FAFA;
+
+    position: absolute;
+    top: 65px;
+    left: 0px;
+
+    padding: 20px;
+    box-shadow: 1px 2px 5px 5px #cecfcf;
+
+    right: 200% ; 
+    transition: all 3s;
+
+}
+.mr-form
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}
+.mr-formTitle
+{
+padding : 15px;
+background-color: #F4F6F8;
+}
+.mr-formTitle h3
+{
+    font-size: 22px;
+}
+.mrf-table
+{
+    padding: 5px 15px;
+}
+.mrf-table table
+{
+    width: 100%;
+    font-size: 18px;
+}
+.mrf-table td 
+{
+padding: 5px;
+}
+.mrf-table td:first
+{
+    width: 30%;
+}
+
+.mrf-table td:nth-child(2)
+{
+    width: 25%;
+    text-align: left;
+}
+.mrf-table td:last-child
+{
+    width: 45%;
+}
+.mrf-table input
+{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    padding: 0 5px;
+}
+.mrf-table textarea 
+{
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    padding: 0 5px;
+    resize: none;
+}
+.mrf-table img
+{
+    width: 100%;
+    height: 100%;
+}
+.mrf-button
+{
+    padding: 10px;
+text-align: center;
+}
+.mrf-button button
+{
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+}

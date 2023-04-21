@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+    function Apple(){
+        this.weight=10;
+        this.Decarease=()=>this.weight--;
+        this.isEmpty=()=>this.isEmpty=false;
+        this.getWeight=()=>this.weight++
+    }
+    function Human(name, gender, weight){
+        this.name = name;
+        this.gender=gender;
+        this.weight=weight;
+
+
+        this.eat =(Apple) =>{
+            if(Apple.getWeight>0)
+            {this.weight++;}
+            else
+            {alert("Hết táo rồi")}
+        }
+        this.say=(string) => this.say=string;
+
+
+        this.setWeight=() =>this.weight++;
+        this.getWeight=()=>this.weight= weight;
+    }
+    const apple =Apple();
+    const people = [
+        new Human("Eva","false",45),
+        new Human("Adam","true",55)
+    ];
+    people[2].say("ban co khoe khong");
+    console.log(people);
+
+    </script>
+</body>
+</html>

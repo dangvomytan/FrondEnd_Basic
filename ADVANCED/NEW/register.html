@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 14px;
+    font-family:  'Courier New', Courier, monospace;
+
+}
+#formRegister
+{
+    background-color: #ccc;
+    width: 100%;
+    height: 600px;
+
+}
+#fm-register
+{
+    width: 380px;
+    height: auto;
+    border: 2px solid green;
+    margin: auto;
+    padding: 15px;
+    background-color: #fff;
+}
+#fm-title
+{
+    padding: 5px;
+}
+.inputField
+{
+    position: relative;
+    margin-bottom: 5px;
+}
+.inputField span
+{
+    position: absolute;
+    width: 35px;
+    height: 37px;
+
+    border-right: 1px solid gray;
+    /* background-color: goldenrod; */
+
+}
+.error
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    color: red;
+}
+.bx
+{
+    width:100%;
+    height: 100%;
+    font-size: 35px;
+    /* background-color: aqua; */
+}
+.bx-lock-open-alt
+{
+    display: none;
+}
+.bx-lock-alt:hover
+{
+    color: red;
+}
+.bx-lock-open-alt:hover
+{
+    color: green;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+font-size: 16px;
+width: 100%;
+padding: 7px 10px 8px 35px;
+}
+#NameInput
+{
+display: flex;
+gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <section id="formRegister">
+        <div id="fm-register">
+            <div id="fm-title">
+                <h2>Đăng ký</h2>
+                <p>Nhanh chóng và dễ dàng</p>
+                <hr>
+            </div>
+            <form id="fmRegister" action="" method="get">
+                <div class="formInput">
+                    <div class="inputField">
+                        <span>
+                            <i class='bx bx-envelope'></i>
+                        </span>
+                        <input 
+                            type="text" 
+                            name="email" 
+                            id="tbxEmail"
+                            placeholder="Email"
+                        >
+                        <p class="error" id="errorEmail">   </p>
+                    </div>
+                    <div class="inputField">
+                        <span onclick="handleShowHidenPass()">
+                            <i class='bx bx-lock-alt lockpass'></i>
+                            <i class='bx bx-lock-open-alt openpass'></i>
+                        </span>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="tbxPassword"
+                            placeholder="Password"
+                        >
+                        <p class="error" id="errorPassword"></p>
+                    </div>
+                    <div class="inputField">
+                        <span onclick="handleShowHidenRePass()">
+                            <i class='bx bx-lock-alt lockrepass'></i>
+                            <i class='bx bx-lock-open-alt openrepass'></i>
+                        </span>
+                        <input 
+                            type="password" 
+                            name="rePassword" 
+                            id="tbxRePassword"
+                            placeholder="Re-type password"
+                        >
+                        <p class="error" id="errorRePassword"></p>
+                    </div>
+                    <div id ="NameInput">
+                        <div class="inputField">
+                            <span>
+                                <i class='bx bx-user'></i>
+                            </span>
+                                <input 
+                                    type="text" 
+                                    name="firstName" 
+                                    id="tbxFirstName"
+                                    placeholder="First Name"
+                                >
+                                <p class="error" id="errorFirstName"></p>
+                        </div>
+                        <div class="inputField">
+                                <span>
+                                    <i class='bx bx-user'></i>
+                                </span>
+                                <input 
+                                    type="text" 
+                                    name="lastName" 
+                                    id="tbxLastName"
+                                    placeholder="Last Name"
+                                >
+                                <p class="error" id="errorLastName"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Register">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+    // Lấy dữ liệu từ localStorage
+    const userData = localStorageGetItem("user")
+
+    // Lấy giá trị nhập vào từ input
+
+    const info = getValueInput();
+   console.log("info1",info);
+    // Lắng nghe sự kiện của form
+    const formElement = document.querySelector("#fmRegister");
+    formElement.addEventListener("submit",(e)=>
+    {
+        // Cập nhật dữ liệu từ localStorage
+        const userData = localStorageGetItem("user");
+        let isDulicate = false;
+        e.preventDefault();
+        const isCheck = checkValidator(info,userData);
+           console.log("info2",info);
+        // debugger;
+        if(isCheck)
+        {
+            userData.forEach((user)=>
+            {
+                if(user.email===info.email)
+                {
+                    isDulicate=true;
+                }
+            });
+            if(!isDulicate)
+            {
+                userData.push(info);
+                localStorageSetItem("user", userData);
+                alert("Đăng ký thành công")
+                document.querySelector("#tbxEmail").value="";
+                document.querySelector("#tbxPassword").value="";
+                document.querySelector("#tbxRePassword").value="";
+                document.querySelector("#tbxFirstName").value="";
+                document.querySelector("#tbxLastName").value="";
+            }
+            else
+            {
+                const errorEmail = document.querySelector("#errorEmail");
+                errorEmail.innerHTML="Email đã tồn tại, hãy dùng email khác"
+            }
+
+        }
+    });
+    // ===== funtion =====
+    function handleShowHidenPass()
+    {
+        const inputPassWord = document.querySelector("#tbxPassword");
+        const iconShow = document.querySelector(".lockpass");
+        const iconHiden = document.querySelector(".openpass");
+        if(inputPassWord.type ==="password")
+        {
+            inputPassWord.type="text";
+            iconShow.style.display ="none";
+            iconHiden.style.display = "inline"
+        }
+        else
+        {
+            inputPassWord.type="password";
+            iconShow.style.display ="inline";
+            iconHiden.style.display = "none";
+        }
+    }
+    function handleShowHidenRePass()
+    {
+        const inputRePassWord = document.querySelector("#tbxRePassword");
+        const iconShow = document.querySelector(".lockrepass");
+        const iconHiden = document.querySelector(".openrepass");
+        if(inputRePassWord.type ==="password")
+        {
+            inputRePassWord.type="text";
+            iconShow.style.display ="none";
+            iconHiden.style.display = "inline"
+        }
+        else
+        {
+            inputRePassWord.type="password";
+            iconHiden.style.display = "none"
+            iconShow.style.display ="inline";
+        }
+    }
+    // Lấy value input từ form
+    function getValueInput()
+    {
+        const inputElements = document.querySelectorAll(".formInput");
+        // console.log(inputElements);
+        const info = {};
+        inputElements.forEach((element)=>
+        {
+            // debugger;
+            console.log("element",element);
+            element.addEventListener("input",(event)=>
+            {
+                info[event.target.name] = event.target.value;
+                // console.log(info.email);
+            });
+        });
+
+        console.log();
+        return info;
+    }
+    // kiểm duyệt nội dung của input
+    function validator(info)
+    {
+        let error = {
+            isError:        false,
+            errorEmail:     "",
+            errorPassword:  "",
+            errorRePassword:"",
+            errorLastName:  "",
+            errorFirstName: "",   
+        }
+        const regxEmail =
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        //Đặt điều kiện hỏi email có tồn tại hay không
+       if(!info.email?.match(regxEmail))
+        {
+            isError=true;
+            error.errorEmail="Email không đúng định dạng";
+        }
+        
+        if(!info.password)
+        {
+            error.isError =true;
+            error.errorPassword="Password không được để trống"
+        }
+        else
+        if(info.password.length<8)
+        {
+            error.isError =true;
+            error.errorPassword="Password không được nhỏ hơn 8 ký tự"
+        }
+        if(!info.rePassword)
+        {
+            error.isError=true;
+            error.errorRePassword="Re-type password không được để trống"
+        }
+        if(info.rePassword !== info.password)
+        {
+            error.isError = true;
+            error.errorRePassword="Password không trùng khớp"
+        }
+        if(!info.lastName)
+        {
+            error.isError=true;
+            error.errorLastName="Last name không được bỏ trống"
+        }
+        if(!info.firstName)
+        {
+            error.isError=true;
+            error.errorFirstName="First name không được bỏ trống"
+        }
+        return error;
+    }
+    function checkValidator(info)
+    {
+        // console.log(info);
+        const errorEmail = document.querySelector("#errorEmail");
+        const errorPassword = document.querySelector("#errorPassword");
+        const errorRePassword = document.querySelector("#errorRePassword");
+        const errorLastName = document.querySelector("#errorLastName");
+        const errorFirstName = document.querySelector("#errorFirstName");
+
+        const check = validator(info);
+        let isCheck=false;
+        // console.log("check=>",check);
+        if(check.isError)
+        {
+            isCheck=false;
+            errorEmail.innerHTML = check.errorEmail;
+            errorPassword.innerHTML = check.errorPassword;
+            errorRePassword.innerHTML = check.errorRePassword;
+            errorFirstName.innerHTML = check.errorFirstName;
+            errorLastName.innerHTML = check.errorLastName;
+        }
+        else
+        {
+            isCheck=true;
+            errorEmail.innerHTML = "";
+            errorPassword.innerHTML = "";
+            errorRePassword.innerHTML = "";
+            errorFirstName.innerHTML = "";
+            errorLastName.innerHTML = "";
+        }
+        return isCheck;
+    }
+    // ===================
+    function localStorageGetItem(key)
+    {
+        const data = JSON.parse(localStorage.getItem(`${key}`)) ?? [];
+        return data;
+    }
+    function localStorageSetItem(key,data)
+    {
+        localStorage.setItem(`${key}`,JSON.stringify(data));
+    }
+    </script>
+</body>
+</html>

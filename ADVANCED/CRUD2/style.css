@@ -1,0 +1,164 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: tahoma;
+}
+#ad
+{
+    margin: auto;
+    width: 1000px;
+    /* border: 1px solid gray; */
+    position: relative;
+}
+#banner
+{
+    width: 1000px;
+    /* border: 2px solid red; */
+    margin: auto;
+    position: relative;
+}
+/* ====== banner ==== */
+#banner img
+{
+    width: 100%;
+    margin: auto;
+}
+#banner > #bannerTitle
+{
+    width: 300px;
+font-size: 20PX;
+background-color: orange;
+position: absolute;
+top: 100px;
+left: 30px;
+}
+/* ==== Sản phẩm nổi bật ==== */
+#ProductHot
+{
+    width: 1000px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-areas: "card card card card card"; */
+gap: 5px;
+}
+.cardProductHot
+{
+    width: 100%;
+}
+.cardHot_img
+{
+    width: 190px;
+    height: 275px;
+    margin: auto;
+}
+.cardHot_img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* ===== Giỏ hàng ====== */
+#cart
+{
+    width: 100%;
+    /* border: 2px solid rgb(110, 8, 199); */
+}
+#cart table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+#cart th
+{
+padding: 10px 5px;
+background-color: rgb(62, 90, 212);;
+
+}
+#cart td
+{
+text-align: center;
+padding: 5px 0;
+}
+#cart td:first-child
+{
+    width: 10%;
+}
+#cart td:nth-child(2)
+{
+    width: 15%;
+}
+#cart td:nth-child(3)
+{
+    width: 40%;
+    text-align: left;
+}
+#cart td:nth-child(4)
+{
+    text-align: left;
+}
+#cart td:last-child
+{
+    width: 20%;
+}
+#cart tr:nth-child(even)
+{
+    background-color: rgb(155, 165, 208);
+}
+#cart tr:nth-child(odd)
+{
+    background-color: rgb(186, 198, 241);
+}
+#cart img
+{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    
+}
+#cart button
+{
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    
+}
+/* ============================= */
+.div_title
+{
+    background-color: green;
+    padding: 10px 5px;
+    padding-left: 20px;
+}
+#addProduct
+{
+    width: 800px;
+    height:auto;
+    background-color: #ccc;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+#addProduct table
+{
+    width: 100%;
+}
+#addProduct td
+{
+    padding: 10px 5px;
+
+}
+#addProduct td:first-child
+{
+    padding-left: 20px;
+
+}

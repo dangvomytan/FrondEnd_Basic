@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="User">
+        <div id="User_title">
+            <div><h3>Users</h3></div>
+            <div>
+                <input type="text" id="tbx_SearchUser" oninput="handleSearchUser(this.value)">
+            </div>
+            <div>
+                <button><i class="fa-brands fa-searchengin fa-xl" style="color: #ffffff;"></i></button>
+                <button><i class="fa-solid fa-user-plus fa-xl"></i></button>
+            </div>
+
+        </div>
+        <div id="User_table">
+            <table id="tblUser">
+                <tr>
+                    <th>#</th>
+                    <th>Avata</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>User Name</th>
+                    <th>Action</th>
+                </tr>
+                <!-- <tr>
+                    <td>1</td>
+                    <td><img src="../CRUD/image/hinh-dong-anh-cute.gif"></td>
+                    <td>Tan</td>
+                    <td>Dang</td>
+                    <td>dangvomytan@gmail.com</td>
+                    <td>
+                        <button onclick="editUser()"><i class="fa-solid fa-user-pen fa-2xl" ></i></button>
+                        <button onclick="deleteUser()"><i class="fa-solid fa-user-xmark fa-2xl"></i></button>
+                    </td>
+                </tr> -->
+            </table>
+        </div>
+    </section>
+    <section id="addUser">
+        <div id="form">
+            <div class="div_input">
+                <label for="">Avatar</label>
+                <input type="file" name="" id="img_avatar" onchange="updateFilename(this.value)>
+            </div>
+            <div class="div_input">
+                <label for="">Fisrt name</label>
+                <input type="text" name="" id="tbx_firstName">
+            </div>
+            <div class="div_input">
+                <label for="">Last name</label>
+                <input type="text" name="" id="tbx_lastName">
+            </div>
+            <div class="div_input">
+                <label for="">User name</label>
+                <input type="text" name="" id="tbx_userName">
+            </div>
+            <div class="div_input">
+                <button onclick="createUser()">Create</button>
+                <button>Resset</button>
+            </div>
+        </div>
+    </section>
+    <script src="CRUD.js"></script>
+</body>
+</html>
